@@ -16,11 +16,17 @@ spring:
         format_sql: true
     database-platform: org.hibernate.dialect.H2Dialect
 
-logging:
-  level:
-    org:
-      hibernate:
-        SQL: debug
+# p6spy 설정했기 때문에 주석처리 > 운영에서는 p6spy 쓰지말고 주석 풀어서 쓰기
+#logging:
+#  level:
+#    org:
+#      hibernate:
+#        SQL: debug
+
+decorator:
+  datasource:
+    p6spy:
+      enable-logging: true
 
 server:
   port: 8081
