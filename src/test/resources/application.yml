@@ -6,7 +6,7 @@
 #    password:
 #    driver-class-name: org.h2.Driver
 
-
+#ㅁㅁㅁㅁ
 #  jpa:
 #    hibernate:
 #      ddl-auto: create
