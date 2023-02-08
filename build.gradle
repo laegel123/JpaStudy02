@@ -30,6 +30,9 @@ dependencies {
 	// (boot 3.0 이상부터는 p6spy 지원하지 않아 resources 경로 밑에 파일 2개 추가), config 경로 밑에 멀티라인 적용 config 파일 추가
 	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.8.0'
 
+	// spring 2.3 이상부터는 validation을 지원하지 않아 직접 주입
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
 
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2'
