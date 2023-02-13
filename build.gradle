@@ -25,7 +25,7 @@ dependencies {
 
 
 	// 개발 편의를 위한 라이브러리 (SSR 사용 시 세팅 후 텍스트 수정 메뉴바 build > recompile '~~' 메뉴를 통해 바로 적용 가능)
-	implementation 'org.springframework.boot:spring-boot-devtools:2.0.2.RELEASE'
+	//implementation 'org.springframework.boot:spring-boot-devtools:2.0.2.RELEASE'
 	// 쿼리 파라미터 노출해주는 라이브러리 (생각보다 많은 자원을 소모하기 때문에 운영 환경에서는 반드시 enable-logging을 false로 두고 사용하는 것을 권장)
 	// (boot 3.0 이상부터는 p6spy 지원하지 않아 resources 경로 밑에 파일 2개 추가), config 경로 밑에 멀티라인 적용 config 파일 추가
 	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.8.0'
