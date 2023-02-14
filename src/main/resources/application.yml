@@ -14,6 +14,7 @@ spring:
       hibernate:
 #        show_sql: true
         format_sql: true
+        default_batch_fetch_size: 100
     database-platform: org.hibernate.dialect.H2Dialect
 
 # p6spy 설정했기 때문에 주석처리 > 운영에서는 p6spy 쓰지않는게 좋음
