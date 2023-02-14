@@ -71,9 +71,17 @@ public class OrderApiController {
     }
 
     @GetMapping("/api/v4/orders")
-    public List<OrderQueryDto> ordersV4_page(@RequestParam(value = "offset", defaultValue = "0") int offset
+    public List<OrderQueryDto> ordersV4(@RequestParam(value = "offset", defaultValue = "0") int offset
             , @RequestParam(value = "limit", defaultValue = "100") int limit) {
         List<OrderQueryDto> orders = orderQueryRepository.findOrderQueryDtos();
+
+        return orders;
+    }
+
+    @GetMapping("/api/v5/orders")
+    public List<OrderQueryDto> ordersV5(@RequestParam(value = "offset", defaultValue = "0") int offset
+            , @RequestParam(value = "limit", defaultValue = "100") int limit) {
+        List<OrderQueryDto> orders = orderQueryRepository.findAllByDto_optimization();
 
         return orders;
     }
